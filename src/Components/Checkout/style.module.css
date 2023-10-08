@@ -1,0 +1,103 @@
+.form_control{
+    width: 97%;
+    /* padding: 0.375rem 0.75rem; */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #EAE6E1 !important;
+    background-clip: padding-box;
+    border: 1px solid #7FC5D6 !important;
+    border-radius: 0.25rem;
+    padding: 20px 15px;
+    height:20px;;
+    margin-bottom: 0 !important;
+    margin-top:10px;
+}
+
+
+.text {
+    display: block;
+    width: 98%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow:auto;
+    border: 1px solid #7FC5D6 !important;
+    border-radius: 5px !important;
+    background-color: #EAE6E1 !important;
+    margin-bottom: 0 !important;
+
+}
+
+.text:focus{
+    outline:none;
+    border: 1px solid #7FC5D6 !important;
+
+}
+
+.checkbox{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00784B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:10px;
+    margin-top:9px;
+}
+
+
+.btn{
+    border-radius: 5px !important;
+    background-color: #00784B !important;
+    border: 0 !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 27px;
+    padding: 10px 45px !important;
+}
+
+.select{
+    display: block;
+    width: 85%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow:auto;
+    border: 1px solid #7FC5D6 !important;
+    border-radius: 5px !important;
+    background-color: #EAE6E1 !important;
+    margin-bottom: 0 !important;
+    margin-top:10px;
+}
+
+.select2{
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow:auto;
+    border: 1px solid #7FC5D6 !important;
+    border-radius: 5px !important;
+    background-color: #EAE6E1 !important;
+    margin-bottom: 0 !important;
+    margin-top:10px;
+}

@@ -1,0 +1,143 @@
+@import '../../../index.scss';
+@import '../../../sass/mixins';
+
+
+.prodCard {
+  // flex: 0 0 25%;
+  // max-width: 25%;
+  min-width: 220px;
+  // max-width: 250px;
+  min-height: 312px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (max-width: $xl-media) {
+    min-width: 200px;
+  }
+  @media (max-width: $xs-media) {
+    max-width: 250px;
+    margin: 0px auto;
+    min-width: 150px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media (max-width: $xxs-media) {
+  }
+  &__container {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    @include borderRadius(8px);
+    @include transition(0.1s);
+    cursor: pointer;
+    .cartLink {
+      .innerCard {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .image {
+          max-height: 170px;
+          max-width: 90px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .prodDetails {
+
+          .title {
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 20px;
+          }
+          .size {
+
+          }
+          .price {
+            color: $primary;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 27px;
+          }
+        }
+      }
+    }
+    .addBtns {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      svg {
+        font-size: 20px;
+        color: $white;
+      }
+      .addToFav,
+      .addToCard {
+        width: 32px;
+        height: 32px;
+        border: 1px solid transparent;
+        @include borderRadius(50%);
+        padding: 2px;
+        display: grid;
+        place-items: center;
+        @include transition(0.2s);
+        &:hover {
+          border-color: $white;
+          background-color: $white;
+          svg {
+            color: $primary;
+          }
+        }
+      }
+      .addToFav {
+        svg {
+          color: $danger;
+        }
+      }
+      .addToCard {
+        svg {
+          color: $primary;
+        }
+      }
+      .addToFavClicked {
+        svg {
+          color: $danger;
+          fill: $danger;
+        }
+      }
+      .addToCardClicked {
+        svg {
+          color: $primary;
+          fill: $primary;
+        }
+      }
+    }
+    &:hover {
+      background: url(../../../../public/images/green_bg_pattern.png) repeat center top;
+      background-size: 70%;
+      color: $white;
+      .cartLink {
+        .innerCard {
+          img {
+          }
+          .prodDetails {
+            .title {
+            }
+            .size {
+            }
+            .price {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

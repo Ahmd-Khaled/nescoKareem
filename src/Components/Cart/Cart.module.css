@@ -1,0 +1,39 @@
+.paymentForm input[type="checkbox"] {
+    margin-left: 15px;
+}
+
+
+
+.paymentForm input[type="checkbox" ] {
+    border: 2px solid #00784B;
+    padding: 10px;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+}
+
+
+
+
+.paymentForm input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00784B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+.paymentForm input[type="checkbox" ]:checked {
+    background: #00784B;
+    box-shadow: inset 0px 0px 0px 3px white;
+    -webkit-box-shadow: inset 0px 0px 0px 3px white;
+    -moz-box-shadow: inset 0px 0px 0px 3px white;
+    -o-box-shadow: inset 0px 0px 0px 3px white;
+}
